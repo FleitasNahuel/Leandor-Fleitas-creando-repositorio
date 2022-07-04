@@ -5,376 +5,90 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-.gridContenedor{
-    max-height: 100vh;
-    max-width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:"header" "main" "footer";
-    overflow-x:hidden;
+/* acá empieza la nav */
+.mi-navbar{
+    background-color: #96C7C1;
 }
-.gridContenedor *
-    {max-height: 100vh;
-    max-width: 100vw;
-    text-align: center;
-
+.mi-li{
+    font-size: 2vw;
+    color: #0a083d;
+    text-decoration: none;
+    padding: 1vw;
 }
-
-.gridHeader{
-    grid-area: "header";
+/* acá termina la nav */
+/* acá empieza el main */
+.fondo-index{
+    background-image:url(https://img.freepik.com/foto-gratis/almuerzo-saludable-llevar-empacado-lonchera_1220-4541.jpg?w=2000);
+    background-repeat: none;
+    background-size: 100%;
 }
-.gridMain{
-    grid-area: "main";
-}
-.gridFooter{
-    grid-area: "Footer";
-}
-html{
-    font-size:62.5%;
-    }
-    /* .contenedorHeader{ */
-    
-header{
-    background-color: #DEEDF0;
-   
-   
-    
-}
-nav{
-    background-color: #DEEDF0;
-    padding: 2vh 3vw;
-    padding-bottom: 10%;
-}
-    nav img{
-        width: 65vw;
-        height: 10vh;
-        border-radius: 1vh;
-    }
-    nav ul{
-        list-style: none;
-        margin-top: 7%;
-        text-align: center;
-        
-    }
-        nav ul li{
-            display: inline-flex;
-            align-items: center;
-        }
-            nav ul li a {
-                text-decoration: none;
-                color: #1a315a;
-                font-size: 4vh;
-                font-weight: 800;
-                padding: 1vh;
-            }
-    header h2{
-        font-family: 'Roboto Mono', monospace;
-        text-align: center;
-        font-size: 4vh;
-        font-weight: 600;
-        color: rgb(124, 202, 176);
-        padding: 3vh 2vw;
-    }  
-    header h3{
-        text-align: center;
-        font-size: 3vh;
-        font-weight: 600;
-        color: #1a315a;
-        font-family: 'Roboto Mono', monospace;
-        padding-bottom: 1vh;
-        margin: 0%;
-}      
-            /*acá termina el header y la nav */
-            /* acá comienza el main */
-main{
-    background-image:url(https://previews.123rf.com/images/romastudio/romastudio1603/romastudio160300062/52848975-la-alimentaci%C3%B3n-saludable-fondo-fotograf%C3%ADa-de-estudio-de-diferentes-frutas-y-verduras-en-el-contexto.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: 0%
-    
-}
-#h2Main{
+h1{
+    display: flex;
+    justify-content: center;
     color: #1a315a;
     text-align: center;
-    font-weight: 100;
+    font-weight: 600;
     padding: 1vh 15vw;
     border-radius: 3vh;
     border-style:dashed;
     border-color:#1a315a;    
-    height: 1;
-    width: 32vw    
+    height: 100%;
+    width: 25%;
+    font-size: 100%;    
 }
 
-/* acá termina el main */
-/* acá empieza el footer */
-footer{
-    background-color: #DEEDF0;
-    
-}
-footer img{
-    width: 7.5vw;
-    height: 7.5vh;
-    padding: 7vw;
-    border-radius: 100%;
-    margin-left: 29,5vw;
-    display: inline;
-}
-footer h2{
-    font-size: 4vh;
-    color:  rgb(124, 202, 176);
+h2{
     font-family: 'Roboto Mono', monospace;
-    display: block;
-    margin-left: 37vw; 
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 600;
+    color: rgb(124, 202, 176);
+    padding: 3vh 2vw;
+}  
+h3{
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #1a315a;
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 1vh;
+    margin: 0%; 
+}      
+
+/* acá temrina el main */
+/* acá empieza las cards */
+.h3-card{
+    display: flex;
+    text-align: center;
+    border: none;
+    background-color: #f7cf2f;
     justify-content: center;
-    align-content: center;
-    border-style: dashed;
-    border-color: #1a315a;
-    padding: 1,5vw;
-    height: 5vh;
-    width: 35vw
+    font-weight: bold;
+    color: white;
+    height: 15vh;
+}
+.h3-card1{
+    display: flex;
+    text-align: center;
+    border: none;
+    background-color: #FF7F3F;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    height: 15vh;
+}
+.cards-index:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12vh 16vw rgba(0, 0, 0, 0,2);
+}
+/* acá termina las cards */
+/* acá empieza el footer */
+.fondo-footer{
+   background-color: #96C7C1;
+}
+#h2-footer{
+    color: #0a083d;
+    font-weight: 900;
+    font-size: 3vw;
 }
 /* acá termina el footer */
-/* acá empieza el css de recetas */
-section{
-    background-image: url(../images/imagenfondorecetas.png);
-    background-position: 100% 100%;
-}
-.recetas{
-    width: 100%;
-    max-width: 12vw;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 3vh 3vw;
-    margin-left: 10%;
-    padding: 2vh;
-}
-.recetas .platos{
-    width: 320px;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0,2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
-}
-.recetas .platos:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0,2);
-}
-.recetas .platos img{
-    width: 300px;
-    height: 275px;
-    border-style: solid; 
-    border-color: #DEEDF0;
-    border-width: 10px;
-    
-}
-.recetas .platos h2{
-    background-color: #DEEDF0;
-    /* border-radius: px; */
-    font-size: 200%;
-    font-weight: 30%;
-    color: #F29A74;
-    margin-top: 0;
-    height: 65px;
-    padding: 0px;
-}
-div p{
-    color: #1a315a;
-    font-size: 20px;
-    font-weight: 25%;
-}
-button{
-    color: white;
-    font-weight: 400;
-    font-size: 15px;
-    border-radius: 20%;
-    border-color: #E6acad;
-    background-color: #E6acad;
-    height: 5%;
-    width: 20%;
-    margin-top: 15px;
-    }
-    /* aca temrina recetas */
-    /* aca empieza el css de formulario */
-
-.form-register{
-    width: 400px;
-    background-color: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 100px;
-    border-radius: 4px;
-    color:white; 
-    box-shadow: 7px 13px 37px #000;
-}
-.form-register h4{
-    font-size: 22px;
-    margin-bottom: 20px;
-    
-}
-.controls{
-    width: 100%;
-    background-color: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-size: 18px;
-}
-.form-register p{
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-}
-.form-register a:hover {
-    color: white;
-    text-decoration: rgb(124, 202, 176);
-}
-.form-register .botons{
-    width: 100%;
-    background-color: #1f53c5;
-    border: none;
-    padding: 16px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-}
-/* acá termina el css de formulario */
-/* acá empieza el css de page planes */
-.planes{
-    background-image: url(https://nuten.es/wp-content/uploads/2021/09/hojas-2-1.png);
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    width: 100%;
-    max-width: 1000px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px 50px;
-    margin-left: 10%;
-    padding: 20px;
-}
-.planes .tarjetas{
-    width: 200px;
-    height: 750px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0,2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
-    
-}
-.planes .tarjetas:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0,2);
-}
-#funcion{ 
-    justify-content: center;
-    padding-left: 35%;
-    margin-right: 0%;
-    font-size: 50px;
-}
-.tarjetas h2{
-    border-radius: 100px 100px;
-    width: 60px ;
-    color: #1a315a;
-    background-color: #E6acad;
-    font-size: 40px;
-    margin-left: 35%;
-    margin-bottom: 15px;
-}
-/* ac termina el css de planes */
-/* acá empieza el css de nosotros.html */
-.invitacion{
-    font-size: 30px;
-    color: #1a315a;
-    text-align: center;
-    background-color: #DEEDF0;
-    font-weight: 50px;
-
-}
-#descripcion{
-    text-align: center;
-    max-width: 70%;
-    padding-left: 15%;
-    font-weight: 15%;
-    font-size: 30px;
-    padding-top: 20px;
-}
-.compañeros{
-    text-align: center;
-    color: #F29A74;
-    font-size: 25px;
-    font-weight: 50%;
-    padding: 30px;
-}
-.equipo{
-    color: #1a315a;
-    font-size: 40px;
-    font-weight:bolder;
-    padding-left: 20px;
-    padding-bottom: 20%;
-}
-
-.conteinerConocenos{
-    display: block;
-    max-width: 100%;
-    padding-bottom: 30px;
-}
-.conteinerConocenos img{
-    display: flex;
-    max-width: 500px;
-}
-.presentacion{
-    max-width: 80%;
-    display: flex;
-    padding-bottom: 5%;
-}
-.presentacion img{
-    float: right;
-}
-.presentacion1{
-    max-width: 80%;
-    display: flex;
-}
-.cartaPresentacion{
-    max-width: 80%;
-    
-}
-    .cartaPresentacion h2{
-        border-radius: 8px;
-        border-style: dotted;
-        border-color: #1a315a;
-        font-size: 30px;
-        margin: 15px;
-        margin-right: 35%;
-        padding: 15px;
-        border-width: 8px;
-        text-align: center;
-        color: white;
-        background-color: #1a315a;
-    }
-    .cartaPresentacion p{
-        padding-left: 25%;
-        font-size: 20px;
-    }
-    .cartaPresentacion ul{
-        padding-left: 25%;
-        padding-top: 10px;
-        font-size: 20px;
-    }
-    #NatyLuis{
-        margin-left: 50%;
-        margin-right: 0;
-    } 
-    
-
