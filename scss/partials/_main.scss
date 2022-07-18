@@ -1,0 +1,79 @@
+.fondo-index{
+    background-image:url(https://img.freepik.com/foto-gratis/almuerzo-saludable-llevar-empacado-lonchera_1220-4541.jpg?w=2000);
+    background-repeat: none;
+    background-size: 100%;
+    h1{
+        display: flex;
+        justify-content: center;
+        color: #1a315a;
+        text-align: center;
+        font-weight: 600;
+        padding: 1vh 15vw;
+        border-radius: 3vh;
+        border-style:dashed;
+        border-color:#1a315a;    
+        height: 100%;
+        width: 25%;
+        font-size: 100%;    
+    }
+    
+    h2{
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        font-size: 4vh;
+        font-weight: 600;
+        color: rgb(124, 202, 176);
+        padding: 3vh 2vw;
+    }  
+    h3{
+        text-align: center;
+        font-size: 3vh;
+        font-weight: 600;
+        color: #1a315a;
+        font-family: 'Roboto Mono', monospace;
+        padding-bottom: 1vh;
+        margin: 0%; 
+        h1{
+            display: flex;
+            justify-content: center;
+            color: #1a315a;
+            text-align: center;
+            font-weight: 600;
+            padding: 1vh 15vw;
+            border-radius: 3vh;
+            border-style:dashed;
+            border-color:#1a315a;    
+            height: 100%;
+            width: 25%;
+            font-size: 100%;  
+        }
+        article{
+            .cards-index{
+            &hover{
+                transform: translateY(-15px);
+                box-shadow: 0 12vh 16vw rgba(0, 0, 0, 0.2);
+                .h3-card{
+                    display: flex;
+                    text-align: center;
+                    border: none;
+                    background-color: #f7cf2f;
+                    justify-content: center;
+                    font-weight: bold;
+                    color: white;
+                    height: 15vh;
+                }
+                .h3-card1{
+                    display: flex;
+                    text-align: center;
+                    border: none;
+                    background-color: #FF7F3F;
+                    justify-content: center;
+                    font-weight: bold;
+                    color: white;
+                    height: 15vh;
+                }
+            }
+        } 
+    }  
+    }      
+}

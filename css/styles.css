@@ -22,20 +22,7 @@
     background-repeat: none;
     background-size: 100%;
 }
-h1{
-    display: flex;
-    justify-content: center;
-    color: #1a315a;
-    text-align: center;
-    font-weight: 600;
-    padding: 1vh 15vw;
-    border-radius: 3vh;
-    border-style:dashed;
-    border-color:#1a315a;    
-    height: 100%;
-    width: 25%;
-    font-size: 100%;    
-}
+
 
 h2{
     font-family: 'Roboto Mono', monospace;
